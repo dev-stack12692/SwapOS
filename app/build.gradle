@@ -2,7 +2,7 @@ plugins { id 'com.android.application' }
 android {
     namespace 'com.swapos.launcher'
     compileSdk 34
-    defaultConfig { applicationId "com.swapos.launcher"; minSdk 27; targetSdk 34; versionCode 1; versionName "0.1" }
+    defaultConfig { applicationId "com.swapos.launcher"; minSdk 27; targetSdk 34; versionCode 3; versionName "0.3" }
     testOptions { unitTests.includeAndroidResources = true }
 }
 dependencies {
