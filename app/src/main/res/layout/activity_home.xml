@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/wallpaper" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:src="@drawable/wall_phone" android:scaleType="centerCrop"/>
+    <LinearLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:fitsSystemWindows="true">
+        <LinearLayout android:id="@+id/clockCard" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/glass_bg"
+            android:padding="18dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="22dp">
+            <TextView android:id="@+id/clockTime" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" android:textSize="42sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:id="@+id/clockDate" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/btnSettings" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#9881;" android:textColor="#FFFFFF" android:textSize="22sp"
+                android:paddingStart="14dp" android:paddingEnd="4dp"/>
+        </LinearLayout>
+        <GridLayout android:id="@+id/favGrid" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+            android:layout_marginTop="26dp" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"
+            android:layout_gravity="center_vertical" android:columnCount="4" android:alignmentMode="alignBounds"/>
+        <LinearLayout android:id="@+id/searchBar" android:layout_width="match_parent" android:layout_height="52dp"
+            android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/glass_bg"
+            android:paddingStart="18dp" android:paddingEnd="18dp"
+            android:layout_marginStart="18dp" android:layout_marginEnd="18dp" android:layout_marginBottom="18dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="G"
+                android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                android:layout_marginStart="12dp" android:text="Search apps &amp; web" android:textColor="#E8E8E8" android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
