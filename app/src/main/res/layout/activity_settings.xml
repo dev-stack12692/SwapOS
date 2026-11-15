@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/wallpaper" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:src="@drawable/wall_phone" android:scaleType="centerCrop" android:alpha="0.55"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="22dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8592;" android:textColor="#FFFFFF" android:textSize="26sp" android:padding="6dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="SwapOS Settings" android:textColor="#FFFFFF" android:textSize="24sp"
+                    android:textStyle="bold" android:layout_marginStart="14dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Wallpapers" android:textColor="#FFFFFF" android:textSize="16sp"
+                android:textStyle="bold" android:layout_marginTop="26dp"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:scrollbars="none">
+                <LinearLayout android:id="@+id/wallRow" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal"/>
+            </HorizontalScrollView>
+            <LinearLayout android:id="@+id/rowBlur" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/glass_bg"
+                android:padding="16dp" android:layout_marginTop="24dp">
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                    android:text="Frosted glass blur" android:textColor="#FFFFFF" android:textSize="15sp"/>
+                <TextView android:id="@+id/blurState" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#FFE9A23B" android:textSize="15sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/rowAndroidSettings" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/glass_bg"
+                android:padding="16dp" android:layout_marginTop="12dp">
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                    android:text="Android system settings" android:textColor="#FFFFFF" android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textColor="#FFFFFF" android:textSize="18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
