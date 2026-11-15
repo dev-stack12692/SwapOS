@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:src="@drawable/wall_tab" android:scaleType="centerCrop"/>
+    <View android:id="@+id/veil" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/veil_bg"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:fitsSystemWindows="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="16dp"
+            android:orientation="horizontal" android:background="@drawable/glass_bg" android:padding="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apps"
+                android:background="@drawable/tab_on_bg" android:textColor="#1C1508" android:textStyle="bold"
+                android:textSize="14sp" android:paddingStart="22dp" android:paddingEnd="22dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+            <TextView android:id="@+id/tabFiles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Files"
+                android:textColor="#FFFFFF" android:textSize="14sp"
+                android:paddingStart="22dp" android:paddingEnd="22dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+            <TextView android:id="@+id/tabSettings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings"
+                android:textColor="#FFFFFF" android:textSize="14sp"
+                android:paddingStart="22dp" android:paddingEnd="22dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+        </LinearLayout>
+        <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="14dp" android:scrollbars="none">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:id="@+id/chipAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All"
+                    android:background="@drawable/chip_on_bg" android:textColor="#1C1C1E" android:textStyle="bold" android:textSize="13sp"
+                    android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="7dp" android:paddingBottom="7dp"/>
+                <TextView android:id="@+id/chipComm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Communication"
+                    android:background="@drawable/chip_bg" android:textColor="#FFFFFF" android:textSize="13sp" android:layout_marginStart="8dp"
+                    android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="7dp" android:paddingBottom="7dp"/>
+                <TextView android:id="@+id/chipProd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Productivity"
+                    android:background="@drawable/chip_bg" android:textColor="#FFFFFF" android:textSize="13sp" android:layout_marginStart="8dp"
+                    android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="7dp" android:paddingBottom="7dp"/>
+                <TextView android:id="@+id/chipEnt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Entertainment"
+                    android:background="@drawable/chip_bg" android:textColor="#FFFFFF" android:textSize="13sp" android:layout_marginStart="8dp"
+                    android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="7dp" android:paddingBottom="7dp"/>
+                <TextView android:id="@+id/chipTools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tools"
+                    android:background="@drawable/chip_bg" android:textColor="#FFFFFF" android:textSize="13sp" android:layout_marginStart="8dp"
+                    android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="7dp" android:paddingBottom="7dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/appGrid" android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="16dp"
+            android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right"
+            android:layout_marginEnd="22dp" android:layout_marginBottom="14dp" android:text="S W A P O S"
+            android:textColor="#B3FFFFFF" android:textSize="11sp" android:letterSpacing="0.3" android:textStyle="bold"/>
+    </LinearLayout>
+</FrameLayout>
